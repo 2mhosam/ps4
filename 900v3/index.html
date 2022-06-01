@@ -89,27 +89,20 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 
 <br>
 <h1 style="font-size:18px;text-align:center;">Payloads</h1>
-<button class="btn" onmouseover="msgs.innerHTML='Dump Game Only to USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_Gdumper()> Game-Dumper </button>
-<button class="btn" onmouseover="msgs.innerHTML='Enable Some Debugging Functions Available on TestKit'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_todex()> ToDex </button>
-<button class="btn" onmouseover="msgs.innerHTML='Transfer Installed Games to USB Drive in exFAT'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_app2usb()> App2USB </button>
-<button class="btn" onmouseover="msgs.innerHTML='Create a Backup of the Database and Users to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_dbackup()> DB Backup </button>
-<button class="btn" onmouseover="msgs.innerHTML='Restore a Backup of the Database and Users from a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_dbrestore()> DB Restore </button>
+<button class="btn" onmouseover="msgs.innerHTML='Dump Game Only to USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_Gdumper()> Game-Dumper </button>
+<button class="btn" onmouseover="msgs.innerHTML='Enable Some Debugging Functions Available on TestKit'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_todex()> ToDex </button>
+<button class="btn" onmouseover="msgs.innerHTML='Transfer Installed Games to USB Drive in exFAT'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_app2usb()> App2USB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Create a Backup of the Database and Users to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_dbackup()> DB Backup </button>
+<button class="btn" onmouseover="msgs.innerHTML='Restore a Backup of the Database and Users from a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_dbrestore()> DB Restore </button>
 <br>
-<button class="btn" onmouseover="msgs.innerHTML='Enable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_enablebUpdates()> Enable Updates </button>
-<button class="btn" onmouseover="msgs.innerHTML='Disable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by GamerHack'" onclick=load_disableUpdates()> Disable Updates </button>
+<button class="btn" onmouseover="msgs.innerHTML='Enable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_enablebUpdates()> Enable Updates </button>
+<button class="btn" onmouseover="msgs.innerHTML='Disable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v3.0 by Els3edy'" onclick=load_disableUpdates()> Disable Updates </button>
 <button class="btn btn-web" onclick=back() style="margin-bottom: 241px"> Return </button>
 </div>
 <br>
 <h1 style="margin-top: 22px;color: yellow;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color: #f31414;margin-left: 10px;">@sleirsgoevy</a><a style="color: white;margin-left: 10px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color: #f31414;margin-left: 10px;">@SpecterDev</a><a style="color: white;margin-left: 10px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color: #f31414;margin-left: 10px;">@Znullptr</a><a style="color: white;margin-left: 10px;">And wolf...</a></h1>
 <script>
-for(var i=40; i<=75; i=i+5){
-    var select = document.getElementById("tempC");
-    var option = document.createElement("OPTION");
-	select.options.add(option);
-	option.text = i;
-	option.value = i;
-}
-tempC.value=60;
+
 </script>
 <script>
 function jbdone(){
@@ -117,11 +110,6 @@ function jbdone(){
 	document.getElementById("jb-progress").style.display = "none";
 }
 
-function load_mods(){
-	document.getElementById("mods-section").style.display = "block";
-	document.getElementById("main-section").style.display = "none";
-	document.getElementById("jb-progress").style.display = "none";
-}
 
 function back(){
 	document.getElementById("main-section").style.display = "block";
