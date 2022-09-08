@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><head>
-<title>PS4 9.00 FW Host v2.5 by GamerHack</title>
+<title>PS4 9.00 FW Host  by ELS3EDY</title>
 <link rel="stylesheet" href="../style.css">
 <script src="int64.js"></script>
 <script src="rop.js"></script>
@@ -12,11 +12,11 @@
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id="msgs">PS4 9.00 FW Host v2.5 by GamerHack</h1>
+<h1 id="msgs">PS4 9.00 FW Host by ELS3EDY</h1>
 <hr>
 <br>
 <h1 style="font-size:18px;color:yellow;">Main Payloads</h1>
-<button class="btn" onmouseover="GoldHen()" onmouseout="pagetitle()" onclick=load_goldhen222()> GoldHEN v2.2.2 </button>
+<button class="btn" onmouseover="GoldHen()" onmouseout="pagetitle()" onclick=load_goldhen224()> GoldHEN v2.2.4 </button>
 <button class="btn" onmouseover="BinLoader()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:18px;text-align:center;">Payloads</h1>
@@ -61,7 +61,7 @@ tempC.value=60;
 </script>
 <script>
 function GoldHen(){
-document.getElementById("msgs").innerHTML = "GoldHen v2.2.2 for 9.00 FW";
+document.getElementById("msgs").innerHTML = "GoldHen v2.2.4 for 9.00 FW";
 }
 function BinLoader(){
 document.getElementById("msgs").innerHTML = "Send a Payload using port 9020";
@@ -136,9 +136,9 @@ function pagetitle(){
 document.getElementById("msgs").innerHTML = "PS4 9.00 FW Host v2.5 by GamerHack";
 }
 
-function load_goldhen222(){
-document.getElementById("msgs").innerHTML = "GoldHen v2.2.2 for 9.00 FW";
-msgs.innerHTML="Loading GoldHEN v2.2.2... Please Wait !!!";
+function load_goldhen224(){
+document.getElementById("msgs").innerHTML = "GoldHen v2.2.4 for 9.00 FW";
+msgs.innerHTML="Loading GoldHEN v2.2.4... Please Wait !!!";
 PLfile = "goldhen_2.2.2.bin";
 run_jb = "payload";
 setTimeout(poc,1500);
